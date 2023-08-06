@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: titulofonte;
+    src: url('fonts/Ruritania.ttf');
+    font-weight: normal;
+
+}
+
+@font-face {
+  font-family: inicial;
+  src: url(fonts/rosecaps.TTF);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: subtitulo;
+  src: url(fonts/OldLondon.ttf);
+  font-weight: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+
+    --cor01:#ffebd1;
+    --cor02:#f3c17f;
+    --cor03:#e4aa5f;
+    --cor04:#ac824c;
+    --cor05:#81663f;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulo: 'titulofonte';
+    --fonte-inicial: 'inicial';
+    --fonte-subtitulos: 'subtitulo';
+}
+
+.ini::first-letter {
+  font-family: var(--fonte-inicial);
+  font-size: 4em;
+  margin: auto;
+  
+  
+}
+
+header {
+    background-color: #1d0505;
+    text-align: center;
+    padding-top: 30px;
+
+    
+  }
+  
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 5em;
+    font-weight: normal;
+    color: rgb(238, 250, 74);
+    
+    
+
+}
+
+header p {
+  color: white;
+  padding: 10px 0px 15px 0px;
+  text-align: center;
+  
+}
+
+nav {
+  background-color: black;
+  padding: 5px;
+  box-shadow: 5px 5px 7px black;
+  text-align: center;
+
+}
+
+nav > a {
+  color: white;
+  text-decoration: none;
+  padding: 10x;
+  border-radius: 5px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  margin-left: 5%;
+  
+}
+
+main {
+  background-color: white;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.644);
+  border-bottom-left-radius: 10px ;
+  border-bottom-right-radius: 10px;
+
+}
+
+main h2 {
+    color: black;
+    font-family: var(--fonte-subtitulos);
+    font-size: 3em;
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 0px;
+    font-size: 1em;
+    line-height: 1.8em;
+    te
+
+
+}
