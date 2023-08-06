@@ -49,7 +49,7 @@
 header {
     background-color: #1d0505;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
 
     
   }
@@ -59,6 +59,7 @@ header > h1 {
     font-size: 5em;
     font-weight: normal;
     color: rgb(238, 250, 74);
+    padding-top: 20px;
     
     
 
@@ -117,8 +118,5 @@ main p {
     text-align: justify;
     text-indent: 0px;
     font-size: 1em;
-    line-height: 1.8em;
-    te
-
-
+    line-height: 1.8em;   
 }
