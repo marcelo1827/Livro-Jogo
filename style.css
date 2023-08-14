@@ -38,8 +38,8 @@
     --fonte-subtitulos: 'subtitulo';
 }
 
-#mundial {
-  width: 30%;
+div > img {
+  width: 100%;
 }
 
 .ini::first-letter {
