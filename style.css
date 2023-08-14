@@ -38,6 +38,10 @@
     --fonte-subtitulos: 'subtitulo';
 }
 
+#mundial {
+  width: 30%;
+}
+
 .ini::first-letter {
   font-family: var(--fonte-inicial);
   font-size: 4em;
