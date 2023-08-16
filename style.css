@@ -96,7 +96,8 @@ nav > a {
 }
 
 main {
-  background-color: white;
+  background-image: url(imgs/fundo03.jpg);
+  background-size: 100%;
   min-width: 300px;
   max-width: 1000px;
   margin: auto;
