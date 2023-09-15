@@ -6,35 +6,22 @@
     <title>Tela Inicial</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-
-        table {
-            width: 100%;
-            margin-bottom : .5em;
-            table-layout: fixed;
+       main > article > nav {
+            background-color: unset;
+            padding: 5px;
+            box-shadow: none;
             text-align: center;
-            overflow: auto;
-            
         }
 
-        caption {
-            padding-bottom: 5px;
-            font-size: 1em;
-        }
-
-        a {
+        main > article > nav > a {
+            background-color: black;
+            color: white;
             text-decoration: none;
-            color: black;
-        }
-
-        
-
-        table, tr, th {
-            border: 2px solid black;
-            border-collapse: collapse;
-            padding: 4px;
-            font-size: 3vw;
-            
-            
+            padding: 10x;
+            border-radius: 2px;
+            font-weight: bold;
+            transition-duration: 0.4s;
+            margin-left: 3%;
         }
     </style>
 </head>
@@ -57,26 +44,27 @@
             
             <img src="../imgs/g4.png" alt="Regional" style="width: 100%;">
 
-            <table>
-                <caption>Pontos de Interesse</caption>
-                <tr>
-                    <th>Arenia</th>
-                    <th>Porto Real</th>
-                    <th>Fortaleza Real</th>
-                    <th>Aranor</th>
-                    <th>Falah</th>
-                    <th>Haranel</th>
-                </tr>
-                <tr>
-                    <th><a href="../locais/floresta.html">Florestas</a></th>
-                    <th>Pantanos</th>
-                    <th>Estradas</th>
-                    <th>Planicies</th>
-                    <th>Ruinas</th>
-                    <th>Minas</th>
-                </tr>                
-            </table>
 
+
+            <h2>Pontos de interesse</h2>
+            <nav>
+                <a href="#">Arenia</a>
+                <a href="#">Porto Real</a>
+                <a href="#">Fortaleza Real</a>
+                <a href="#">Aranor</a>
+                <a href="#">Falah</a>
+                <a href="#">Haranel</a>
+                <a href="../locais/floresta.html">Florestas</a>
+                <a href="#">Pantanos</a>
+                <a href="#">Estradas</a>
+                <a href="#">Planicies</a>
+                <a href="#">Ruinas</a>
+                <a href="#">Minas</a>
+
+
+            </nav>
+
+            
             <h2>Arenia</h2>
             <p class="ini">A cidade de Arenia é a capital do reino de Arenfal e a sede da família Areniel. É uma cidade bela e sagrada, com muitas igrejas, templos e palácios. A cidade é dividida em quatro distritos: o distrito nobre, onde vivem os membros da corte e os altos clérigos; o distrito comercial, onde se encontram as lojas, as oficinas e os mercados; o distrito popular, onde moram os artesãos, os camponeses e os soldados; e o distrito pobre, onde habitam os mendigos, os órfãos e os criminosos.</p>
                     
