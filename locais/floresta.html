@@ -29,6 +29,11 @@
             table-layout: auto;
             
         }
+
+        #texto { 
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.212);
+        }
     </style>
     
 </head>
@@ -53,26 +58,67 @@
             
             <p class="ini">Florestas de Valmória são lugares onde a aventura e o perigo se misturam. Ela é formada por árvores altas e densas, que criam sombras e sons estranhos. Em seu interior existem diversos caminhos, trilhas e clareiras, que podem levar a lugares maravilhosos ou terríveis. Uma floresta de Valmória é um lugar onde se pode encontrar amigos ou inimigos, tesouros ou armadilhas, magia ou maldição.</p>
 
-            <h2>Explorando</h2>
             <p>
-                
+            O sistema de exploração fica sob controle do jogador, abaixo tem 60 situações onde o jogador escolhe quantos dados quer rolar. Para rolar 1d6 o jogador leva algumas horas explorando as margens da floresta sem entrar em seu interior. Assim quanto mais dados o jogador rolar mais adentro ele entrará e maiores os perigos e tesouros também.
+            </p> 
+            <p>
+            Pode parecer fácil as explorações com 1d6, mas também as recompensas são mínimas tanto em xp quanto em riquezas. Para cada 2d6 rolados o jogador deve consumir uma refeição para cada um na equipe e rolar 1D6 na lista acampando. Role de 1 a 10 dados de 6 lados na lista explorando:
+
             </p>
 
-            <ol>
-                <li><p>Você encontra um cervo machucado, ele ainda corre entre as árvores, mas você percebe que facilmente pode pegá-lo. Faça um teste de dificuldade 7 rolando 2d6. Se passar, você captura o animal e pode retirar três partes: alimento, pele e troféu. Veja na página dos animais para saber mais.</p></li>
+            <p>
+                Exemplo:
 
-                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis consectetur sint inventore quam sed at blanditiis pariatur, earum ducimus nobis! Ratione temporibus magni necessitatibus obcaecati perferendis aliquid accusantium quae rem?</li>
+                O jogador reolveu procurar floresta adentro alguma aventura ou riqueza, assim decidiu rolar 4 dados de seis lados (4D6), ele vai passar dois dias na floresta ate chegar no evento em questao. Para cada dia na floresta ele deve rolar 1D6 em Acampando para saber como passou a noite e descontar uma refeição.
 
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe, error consectetur est, ex veritatis debitis, deserunt ut quo facilis voluptatibus veniam molestiae voluptate. Quos nobis ullam ab maxime! Modi?</li>
+        
+            </p>
 
-            </ol>
-
+            <h2>Acampando</h2>
+            
+            <div>
+                <button id="botao" onclick="carregarTexto()" style="">1D6</button>
+                <p id="texto"></p>
+                
+            </div>
         </article>
     </main>
     <footer>
         <p></p>
 
     </footer>
+<script>
+    // Aqui você pode criar um array com os textos que você quer mostrar
+    var textos = [
+      "No meio da noite enquanto todos dormem, até mesmo quem decidiu ficar de vigia perdeu para este inimigo insistente chamado sono, um casal de lobos ataca (6pv / 1d6-1 / 12xp). Os lobos começam atacando.",
 
+      "Um Goblin solitário mas audacioso decide por bem roubar o acampamento no meio da noite, faça um teste dificuldade 7 rolando 2d6, se passar você acorda com o goblin fazendo barulho tentando catar suas moedas. O goblin ficará apavorado ao ser flagrado e estando sozinho ele tentará fugir dif. 8 para alcançar, quando alcançado ele lutará. Caso você não acorde ele vai roubar 2 refeições suas e 2d6 moedas de prata.",
+
+      "A noite foi chuvosa e fria, menos um ponto de vida.",
+
+      "Você passa a noite tranquilamente, se tiver uma barraca ou um saco de dormir recupera seus pontos de magia e de vida.",
+
+      "Você passa a noite tranquilamente, se tiver uma barraca ou um saco de dormir recupera seus pontos de magia e de vida.",
+
+      "Você passa a noite tranquilamente, se tiver uma barraca ou um saco de dormir recupera seus pontos de magia e de vida. Ainda deu a sorte de ter acampado próximo a um ninho de pássaros que pode substituir uma refeição caso queira.",
+      // ... e assim por diante até o texto número 60
+    ];
+
+    // Esta função é chamada quando o botão é clicado
+    function carregarTexto() {
+      // Seleciona os elementos pelo id
+      var botao = document.getElementById("botao");
+      var texto = document.getElementById("texto");
+
+      // Gera um número aleatório entre 1 e 60
+      var numero = Math.floor(Math.random() * 6) + 1;
+
+      // Seleciona o texto correspondente ao número gerado
+      var textoAleatorio = textos[numero - 1];
+
+      // Altera o conteúdo da div com o texto selecionado
+      texto.innerHTML = textoAleatorio;
+    }
+  </script>
 </body>
 </html>
